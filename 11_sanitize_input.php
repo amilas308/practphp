@@ -1,0 +1,22 @@
+<?php
+if(isset($_POST['submit'])){
+    // echo $_POST['name'];
+    // $name = filter_input(INPUT_POST, 'name', FILTER_SANTIZTE_SPECIAL_CHARS);
+    // echo $_POST['age'];
+    // $gae = filter_input(INPUT_POST, 'age', FILTER_SANTIZTE_SPECIAL_CHARS);
+}
+
+
+?>
+<a href="<?php echo $_SERVER['PHP_SELF'];?>?name=john&age=23">Click</a>
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+    <div>
+        <label for="">Name: </label>
+        <input type="text" name="name" placeholder="name">
+    </div>
+    <div>
+        <label for="">Age: </label>
+        <input type="text" name="age" placeholder="age">
+    </div>
+    <input value="Submit"  type="submit" name="submit">
+</form>
